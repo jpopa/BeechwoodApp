@@ -1,0 +1,9 @@
+C:\Developer\BeechwoodClassic\BeechwoodClassic\bin\Debug\BeechwoodClassic.exe.config
+C:\Developer\BeechwoodClassic\BeechwoodClassic\bin\Debug\BeechwoodClassic.exe
+C:\Developer\BeechwoodClassic\BeechwoodClassic\bin\Debug\BeechwoodClassic.pdb
+C:\Developer\BeechwoodClassic\BeechwoodClassic\obj\Debug\BeechwoodClassic.csprojResolveAssemblyReference.cache
+C:\Developer\BeechwoodClassic\BeechwoodClassic\obj\Debug\BeechwoodClassic.Properties.Resources.resources
+C:\Developer\BeechwoodClassic\BeechwoodClassic\obj\Debug\BeechwoodClassic.TeamGenerator.resources
+C:\Developer\BeechwoodClassic\BeechwoodClassic\obj\Debug\BeechwoodClassic.csproj.GenerateResource.Cache
+C:\Developer\BeechwoodClassic\BeechwoodClassic\obj\Debug\BeechwoodClassic.exe
+C:\Developer\BeechwoodClassic\BeechwoodClassic\obj\Debug\BeechwoodClassic.pdb
