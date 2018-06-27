@@ -174,7 +174,7 @@ namespace BeechwoodClassic
                     Sum = Sum + (int)Ranks[playerNumber];
 
                     Players.Remove(Players[playerNumber].ToString());
-                    Ranks.Remove(Ranks[playerNumber].ToString());
+                    Ranks.Remove(Ranks[playerNumber]);
 
 
                 }
