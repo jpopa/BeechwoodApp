@@ -151,211 +151,710 @@ namespace BeechwoodClassic
 
             int[] Rankings = { 5, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0};
 
+            string[] OnesArray = { "Brian Kelly", "Lucas Bogard", "Drew Taylor" };
+            string[] TwosArray = { "Jordan Popa", "Ryan Popa", "Dan Kellogg", "Brent Whitten", "Buddy Sheffer", "Vikash Pillay", "Jake Desrochers", "Brad Smith", "Connor Dixon" };
+            string[] ThreesArray = { "Eddie Nickerson", "Eric Gordon", "Jake Miller", "Jake Townsend", "James Strabel", "Jordan Rife", "Kevin Bartosek", "Mike Harmeson", "Brad Fite" };
+            string[] FoursArray = { "Drew Nichols", "Billy Auxier", "Cam Corteggiano", "Chad Bigger", "Justin Rife", "Nick Carlson", "Troy Kierczynski" };
+
             ArrayList Players = new ArrayList();
             ArrayList Ranks = new ArrayList();
+            ArrayList Ones = new ArrayList();
+            ArrayList Twos = new ArrayList();
+            ArrayList Threes = new ArrayList();
+            ArrayList Fours = new ArrayList();
 
             Players.AddRange(All);
             Ranks.AddRange(Rankings);
-
+            Ones.AddRange(OnesArray);
+            Twos.AddRange(TwosArray);
+            Threes.AddRange(ThreesArray);
+            Fours.AddRange(FoursArray);
 
             for (int y = 1; y <= totalTeams; y++)
             {
                 ArrayList Team = new ArrayList();
 
                 int Sum = 0;
-                for (int x = 0; x < teamSize; x++)
+                //for (int x = 0; x < teamSize; x++)
+                //{
+
+                    int playerNumber;
+                if (teamSize == 4)
+                {
+                    if (y <= 2)
+                    {
+                        playerNumber = GetNumber(Ones.Count);
+                        Team.Add(Ones[playerNumber]);
+                        Ones.Remove(Ones[playerNumber]);
+
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+                        playerNumber = GetNumber(Fours.Count);
+                        Team.Add(Fours[playerNumber]);
+                        Fours.Remove(Fours[playerNumber]);
+
+
+                    }
+
+
+                    if (y == 3)
+                    {
+
+                        playerNumber = GetNumber(Ones.Count);
+                        Team.Add(Ones[playerNumber]);
+                        Ones.Remove(Ones[playerNumber]);
+
+                        playerNumber = GetNumber(Twos.Count);
+                        Team.Add(Twos[playerNumber]);
+                        Twos.Remove(Twos[playerNumber]);
+
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+                        playerNumber = GetNumber(Fours.Count);
+                        Team.Add(Fours[playerNumber]);
+                        Fours.Remove(Fours[playerNumber]);
+
+
+                    }
+
+
+
+
+
+                    if (y > 3)
+                    {
+
+                        playerNumber = GetNumber(Twos.Count);
+                        Team.Add(Twos[playerNumber]);
+                        Twos.Remove(Twos[playerNumber]);
+
+                        playerNumber = GetNumber(Twos.Count);
+                        Team.Add(Twos[playerNumber]);
+                        Twos.Remove(Twos[playerNumber]);
+
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+                        playerNumber = GetNumber(Fours.Count);
+                        Team.Add(Fours[playerNumber]);
+                        Fours.Remove(Fours[playerNumber]);
+
+
+                    }
+
+
+
+
+
+                    if (y == 1)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team1.AppendText(s);
+
+                            Team1.AppendText("\r\n");
+
+                            //Team1Sum.Text = Sum.ToString();
+                        }
+
+                    }
+
+                    if (y == 2)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team2.AppendText(s);
+
+                            Team2.AppendText("\r\n");
+
+                            // Team2Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 3)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team3.AppendText(s);
+
+                            Team3.AppendText("\r\n");
+
+                            // Team3Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 4)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team4.AppendText(s);
+
+                            Team4.AppendText("\r\n");
+
+                            // Team4Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 5)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team5.AppendText(s);
+
+                            Team5.AppendText("\r\n");
+
+                            //Team5Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 6)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team6.AppendText(s);
+
+                            Team6.AppendText("\r\n");
+
+                            //Team6Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 7)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team7.AppendText(s);
+
+                            Team7.AppendText("\r\n");
+
+                            //Team7Sum.Text = Sum.ToString();
+                        }
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+                else
                 {
 
-                    int playerNumber = GetNumber(Players.Count);
+                    if(Ones.Count > 0)
+                    {
+                        if (Ones.Count == 3)
+                        {
+                            Team.Add("Brian Kelly");
+                            Team.Add("Cam Corteggiano");
+
+                            int findBron = Ones.IndexOf("Brian Kelly");
+                            int findCam = Fours.IndexOf("Cam Corteggiano");
+
+                            Ones.Remove(Ones[findBron]);
+                            Fours.Remove(Fours[findCam]);
+
+
+                        }
+                        else
+                        {
+
+
+                            playerNumber = GetNumber(Ones.Count);
+                            Team.Add(Ones[playerNumber]);
+
+
+    
+                                Team.Add(Fours[playerNumber]);
+                                Fours.Remove(Fours[playerNumber]);
+
+                                Ones.Remove(Ones[playerNumber]);
+                           
+                        }
+
+                    }
+                    else if (Fours.Count > 0)
+                    {
+
+
+                        playerNumber = GetNumber(Twos.Count);
+                        Team.Add(Twos[playerNumber]);
+                        Twos.Remove(Twos[playerNumber]);
+
+                        playerNumber = GetNumber(Fours.Count);
+                        Team.Add(Fours[playerNumber]);
+                        Fours.Remove(Fours[playerNumber]);
+
+                    }
+                    else if (Twos.Count > 0)
+                    {
+
+                        playerNumber = GetNumber(Twos.Count);
+                        Team.Add(Twos[playerNumber]);
+                        Twos.Remove(Twos[playerNumber]);
+
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+
+
+
+                    }
+                    else
+                    {
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+                        playerNumber = GetNumber(Threes.Count);
+                        Team.Add(Threes[playerNumber]);
+                        Threes.Remove(Threes[playerNumber]);
+
+
+                    }
+
+
+
+
+
+                    if (y == 1)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team1.AppendText(s);
+
+                            Team1.AppendText("\r\n");
+
+                            //Team1Sum.Text = Sum.ToString();
+                        }
+
+                    }
+
+                    if (y == 2)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team8.AppendText(s);
+
+                            Team8.AppendText("\r\n");
+
+                            // Team2Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 3)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team2.AppendText(s);
+
+                            Team2.AppendText("\r\n");
+
+                            // Team3Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 4)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team9.AppendText(s);
+
+                            Team9.AppendText("\r\n");
+
+                            // Team4Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 5)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team3.AppendText(s);
+
+                            Team3.AppendText("\r\n");
+
+                            //Team5Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 6)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team10.AppendText(s);
+
+                            Team10.AppendText("\r\n");
+
+                            //Team6Sum.Text = Sum.ToString();
+                        }
+                    }
+
+                    if (y == 7)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team4.AppendText(s);
+
+                            Team4.AppendText("\r\n");
+
+                            //Team7Sum.Text = Sum.ToString();
+                        }
+                    }
+
+
+
+                    if (y == 8)
+                    {
+
+                        foreach (string s in Team)
+                        {
+
+
+                            Team11.AppendText(s);
+
+                            Team11.AppendText("\r\n");
+                        }
+                    }
+
+                    if (y == 9)
+                    {
+
+                        foreach (string s in Team)
+                        {
+
+                            Team5.AppendText(s);
+
+                            Team5.AppendText("\r\n");
+                        }
+                    }
+
+                    if (y == 10)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team12.AppendText(s);
+
+                            Team12.AppendText("\r\n");
+                        }
+                    }
+
+                    if (y == 11)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team6.AppendText(s);
+
+                            Team6.AppendText("\r\n");
+                        }
+                    }
+
+                    if (y == 12)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team13.AppendText(s);
+
+                            Team13.AppendText("\r\n");
+                        }
+                    }
+
+                    if (y == 13)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team7.AppendText(s);
+
+                            Team7.AppendText("\r\n");
+                        }
+                    }
+
+                    if (y == 14)
+                    {
+                        foreach (string s in Team)
+                        {
+
+                            Team14.AppendText(s);
+
+                            Team14.AppendText("\r\n");
+                        }
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+
 
                     
-                    Team.Add(Players[playerNumber]);
-
-                    Sum = Sum + (int)Ranks[playerNumber];
-
-                    Players.Remove(Players[playerNumber].ToString());
-                    Ranks.Remove(Ranks[playerNumber]);
-
-
-                }
 
 
 
 
 
-                if (y == 1)
-                {
-                    foreach (string s in Team)
-                    {
+                    //if(Ones.Contains(Players[playerNumber]))
+                    //{
+                    //    Team.Add(Players[playerNumber]);
 
-                        Team1.AppendText(s);
+                    //    Sum = Sum + (int)Ranks[playerNumber];
+
+                    //    Players.Remove(Players[playerNumber].ToString());
+                    //    Ranks.Remove(Ranks[playerNumber]);
+
+                    //    Ones.Remove(Ones[playerNumber].ToString());
+
+                    //}
+                    
+                    //Team.Add(Players[playerNumber]);
+
+                    //Sum = Sum + (int)Ranks[playerNumber];
+
+                    //Players.Remove(Players[playerNumber].ToString());
+                    //Ranks.Remove(Ranks[playerNumber]);
+
+
+               // }
+
+
+
+
+
+                //if (y == 1)
+                //{
+                //    foreach (string s in Team)
+                //    {
+
+                //        Team1.AppendText(s);
                        
-                        Team1.AppendText("\r\n");
+                //        Team1.AppendText("\r\n");
 
-                        Team1Sum.Text = Sum.ToString();
-                    }
+                //        //Team1Sum.Text = Sum.ToString();
+                //    }
 
-                }
+                //}
 
-                if (y == 2)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 2)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team2.AppendText(s);
+                //        Team2.AppendText(s);
                       
-                        Team2.AppendText("\r\n");
+                //        Team2.AppendText("\r\n");
 
-                        Team2Sum.Text = Sum.ToString();
-                    }
-                }
+                //       // Team2Sum.Text = Sum.ToString();
+                //    }
+                //}
 
-                if (y == 3)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 3)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team3.AppendText(s);
+                //        Team3.AppendText(s);
                       
-                        Team3.AppendText("\r\n");
+                //        Team3.AppendText("\r\n");
 
-                        Team3Sum.Text = Sum.ToString();
-                    }
-                }
+                //       // Team3Sum.Text = Sum.ToString();
+                //    }
+                //}
 
-                if (y == 4)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 4)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team4.AppendText(s);
+                //        Team4.AppendText(s);
                        
-                        Team4.AppendText("\r\n");
+                //        Team4.AppendText("\r\n");
 
-                        Team4Sum.Text = Sum.ToString();
-                    }
-                }
+                //       // Team4Sum.Text = Sum.ToString();
+                //    }
+                //}
 
-                if (y == 5)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 5)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team5.AppendText(s);
+                //        Team5.AppendText(s);
                        
-                        Team5.AppendText("\r\n");
+                //        Team5.AppendText("\r\n");
 
-                        Team5Sum.Text = Sum.ToString();
-                    }
-                }
+                //        //Team5Sum.Text = Sum.ToString();
+                //    }
+                //}
 
-                if (y == 6)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 6)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team6.AppendText(s);
+                //        Team6.AppendText(s);
                      
-                        Team6.AppendText("\r\n");
+                //        Team6.AppendText("\r\n");
 
-                        Team6Sum.Text = Sum.ToString();
-                    }
-                }
+                //        //Team6Sum.Text = Sum.ToString();
+                //    }
+                //}
 
-                if (y == 7)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 7)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team7.AppendText(s);
+                //        Team7.AppendText(s);
                      
-                        Team7.AppendText("\r\n");
+                //        Team7.AppendText("\r\n");
 
-                        Team7Sum.Text = Sum.ToString();
-                    }
-                }
+                //        //Team7Sum.Text = Sum.ToString();
+                //    }
+                //}
 
 
                 
-                if (y == 8)
-                {
+                //if (y == 8)
+                //{
                     
-                    foreach (string s in Team)
-                    {
+                //    foreach (string s in Team)
+                //    {
 
                         
-                        Team8.AppendText(s);
+                //        Team8.AppendText(s);
 
-                        Team8.AppendText("\r\n");
-                    }
-                }
+                //        Team8.AppendText("\r\n");
+                //    }
+                //}
 
-                if (y == 9)
-                {
+                //if (y == 9)
+                //{
                     
-                    foreach (string s in Team)
-                    {
+                //    foreach (string s in Team)
+                //    {
 
-                        Team9.AppendText(s);
+                //        Team9.AppendText(s);
 
-                        Team9.AppendText("\r\n");
-                    }
-                }
+                //        Team9.AppendText("\r\n");
+                //    }
+                //}
 
-                if (y == 10)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 10)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team10.AppendText(s);
+                //        Team10.AppendText(s);
 
-                        Team10.AppendText("\r\n");
-                    }
-                }
+                //        Team10.AppendText("\r\n");
+                //    }
+                //}
 
-                if (y == 11)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 11)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team11.AppendText(s);
+                //        Team11.AppendText(s);
 
-                        Team11.AppendText("\r\n");
-                    }
-                }
+                //        Team11.AppendText("\r\n");
+                //    }
+                //}
 
-                if (y == 12)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 12)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team12.AppendText(s);
+                //        Team12.AppendText(s);
 
-                        Team12.AppendText("\r\n");
-                    }
-                }
+                //        Team12.AppendText("\r\n");
+                //    }
+                //}
 
-                if (y == 13)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 13)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team13.AppendText(s);
+                //        Team13.AppendText(s);
 
-                        Team13.AppendText("\r\n");
-                    }
-                }
+                //        Team13.AppendText("\r\n");
+                //    }
+                //}
 
-                if (y == 14)
-                {
-                    foreach (string s in Team)
-                    {
+                //if (y == 14)
+                //{
+                //    foreach (string s in Team)
+                //    {
 
-                        Team14.AppendText(s);
+                //        Team14.AppendText(s);
 
-                        Team14.AppendText("\r\n");
-                    }
-                }
+                //        Team14.AppendText("\r\n");
+                //    }
+                //}
 
             }
 

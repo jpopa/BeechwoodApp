@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeamGenerator));
             this.TwoManScramble = new System.Windows.Forms.RadioButton();
             this.FourManScramble = new System.Windows.Forms.RadioButton();
             this.Team1 = new System.Windows.Forms.RichTextBox();
@@ -48,21 +49,18 @@
             this.Team12 = new System.Windows.Forms.RichTextBox();
             this.Team13 = new System.Windows.Forms.RichTextBox();
             this.Team14 = new System.Windows.Forms.RichTextBox();
-            this.Team1Sum = new System.Windows.Forms.Label();
-            this.Team2Sum = new System.Windows.Forms.Label();
-            this.Team3Sum = new System.Windows.Forms.Label();
             this.Team4Sum = new System.Windows.Forms.Label();
-            this.Team5Sum = new System.Windows.Forms.Label();
-            this.Team6Sum = new System.Windows.Forms.Label();
-            this.Team7Sum = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TwoManScramble
             // 
             this.TwoManScramble.AutoSize = true;
-            this.TwoManScramble.Location = new System.Drawing.Point(333, 12);
+            this.TwoManScramble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TwoManScramble.Location = new System.Drawing.Point(331, 24);
             this.TwoManScramble.Name = "TwoManScramble";
-            this.TwoManScramble.Size = new System.Drawing.Size(102, 17);
+            this.TwoManScramble.Size = new System.Drawing.Size(116, 17);
             this.TwoManScramble.TabIndex = 0;
             this.TwoManScramble.Text = "2-Man Scramble";
             this.TwoManScramble.UseVisualStyleBackColor = true;
@@ -72,9 +70,10 @@
             // 
             this.FourManScramble.AutoSize = true;
             this.FourManScramble.Checked = true;
-            this.FourManScramble.Location = new System.Drawing.Point(331, 35);
+            this.FourManScramble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FourManScramble.Location = new System.Drawing.Point(331, 47);
             this.FourManScramble.Name = "FourManScramble";
-            this.FourManScramble.Size = new System.Drawing.Size(102, 17);
+            this.FourManScramble.Size = new System.Drawing.Size(116, 17);
             this.FourManScramble.TabIndex = 1;
             this.FourManScramble.TabStop = true;
             this.FourManScramble.Text = "4-Man Scramble";
@@ -82,7 +81,7 @@
             // 
             // Team1
             // 
-            this.Team1.Location = new System.Drawing.Point(13, 110);
+            this.Team1.Location = new System.Drawing.Point(13, 120);
             this.Team1.Name = "Team1";
             this.Team1.Size = new System.Drawing.Size(100, 96);
             this.Team1.TabIndex = 2;
@@ -90,7 +89,7 @@
             // 
             // Team2
             // 
-            this.Team2.Location = new System.Drawing.Point(120, 110);
+            this.Team2.Location = new System.Drawing.Point(120, 120);
             this.Team2.Name = "Team2";
             this.Team2.Size = new System.Drawing.Size(100, 96);
             this.Team2.TabIndex = 3;
@@ -98,7 +97,7 @@
             // 
             // Team3
             // 
-            this.Team3.Location = new System.Drawing.Point(226, 110);
+            this.Team3.Location = new System.Drawing.Point(226, 120);
             this.Team3.Name = "Team3";
             this.Team3.Size = new System.Drawing.Size(100, 96);
             this.Team3.TabIndex = 4;
@@ -106,7 +105,7 @@
             // 
             // Team4
             // 
-            this.Team4.Location = new System.Drawing.Point(333, 110);
+            this.Team4.Location = new System.Drawing.Point(333, 120);
             this.Team4.Name = "Team4";
             this.Team4.Size = new System.Drawing.Size(100, 96);
             this.Team4.TabIndex = 5;
@@ -114,7 +113,7 @@
             // 
             // Team5
             // 
-            this.Team5.Location = new System.Drawing.Point(440, 110);
+            this.Team5.Location = new System.Drawing.Point(440, 120);
             this.Team5.Name = "Team5";
             this.Team5.Size = new System.Drawing.Size(100, 96);
             this.Team5.TabIndex = 6;
@@ -122,7 +121,7 @@
             // 
             // Team6
             // 
-            this.Team6.Location = new System.Drawing.Point(547, 110);
+            this.Team6.Location = new System.Drawing.Point(547, 120);
             this.Team6.Name = "Team6";
             this.Team6.Size = new System.Drawing.Size(100, 96);
             this.Team6.TabIndex = 7;
@@ -130,7 +129,7 @@
             // 
             // Team7
             // 
-            this.Team7.Location = new System.Drawing.Point(654, 110);
+            this.Team7.Location = new System.Drawing.Point(654, 120);
             this.Team7.Name = "Team7";
             this.Team7.Size = new System.Drawing.Size(100, 96);
             this.Team7.TabIndex = 8;
@@ -138,7 +137,7 @@
             // 
             // GenerateButton
             // 
-            this.GenerateButton.Location = new System.Drawing.Point(333, 450);
+            this.GenerateButton.Location = new System.Drawing.Point(348, 442);
             this.GenerateButton.Name = "GenerateButton";
             this.GenerateButton.Size = new System.Drawing.Size(75, 23);
             this.GenerateButton.TabIndex = 9;
@@ -149,20 +148,23 @@
             // vsLabel
             // 
             this.vsLabel.AutoSize = true;
-            this.vsLabel.Location = new System.Drawing.Point(372, 239);
+            this.vsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vsLabel.Location = new System.Drawing.Point(370, 244);
             this.vsLabel.Name = "vsLabel";
-            this.vsLabel.Size = new System.Drawing.Size(21, 13);
+            this.vsLabel.Size = new System.Drawing.Size(33, 20);
             this.vsLabel.TabIndex = 10;
             this.vsLabel.Text = "VS";
+            this.vsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.vsLabel.Visible = false;
             // 
             // usaLabel
             // 
             this.usaLabel.AutoSize = true;
+            this.usaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usaLabel.ForeColor = System.Drawing.Color.Red;
-            this.usaLabel.Location = new System.Drawing.Point(364, 91);
+            this.usaLabel.Location = new System.Drawing.Point(362, 92);
             this.usaLabel.Name = "usaLabel";
-            this.usaLabel.Size = new System.Drawing.Size(29, 13);
+            this.usaLabel.Size = new System.Drawing.Size(46, 20);
             this.usaLabel.TabIndex = 11;
             this.usaLabel.Text = "USA";
             this.usaLabel.Visible = false;
@@ -170,17 +172,18 @@
             // europeLabel
             // 
             this.europeLabel.AutoSize = true;
-            this.europeLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.europeLabel.Location = new System.Drawing.Point(367, 277);
+            this.europeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.europeLabel.ForeColor = System.Drawing.Color.Blue;
+            this.europeLabel.Location = new System.Drawing.Point(352, 295);
             this.europeLabel.Name = "europeLabel";
-            this.europeLabel.Size = new System.Drawing.Size(41, 13);
+            this.europeLabel.Size = new System.Drawing.Size(67, 20);
             this.europeLabel.TabIndex = 12;
             this.europeLabel.Text = "Europe";
             this.europeLabel.Visible = false;
             // 
             // Team8
             // 
-            this.Team8.Location = new System.Drawing.Point(13, 315);
+            this.Team8.Location = new System.Drawing.Point(13, 325);
             this.Team8.Name = "Team8";
             this.Team8.Size = new System.Drawing.Size(100, 96);
             this.Team8.TabIndex = 13;
@@ -189,7 +192,7 @@
             // 
             // Team9
             // 
-            this.Team9.Location = new System.Drawing.Point(120, 315);
+            this.Team9.Location = new System.Drawing.Point(120, 325);
             this.Team9.Name = "Team9";
             this.Team9.Size = new System.Drawing.Size(100, 96);
             this.Team9.TabIndex = 14;
@@ -198,7 +201,7 @@
             // 
             // Team10
             // 
-            this.Team10.Location = new System.Drawing.Point(226, 315);
+            this.Team10.Location = new System.Drawing.Point(226, 325);
             this.Team10.Name = "Team10";
             this.Team10.Size = new System.Drawing.Size(100, 96);
             this.Team10.TabIndex = 15;
@@ -207,7 +210,7 @@
             // 
             // Team11
             // 
-            this.Team11.Location = new System.Drawing.Point(333, 315);
+            this.Team11.Location = new System.Drawing.Point(333, 325);
             this.Team11.Name = "Team11";
             this.Team11.Size = new System.Drawing.Size(100, 96);
             this.Team11.TabIndex = 16;
@@ -216,7 +219,7 @@
             // 
             // Team12
             // 
-            this.Team12.Location = new System.Drawing.Point(440, 315);
+            this.Team12.Location = new System.Drawing.Point(440, 325);
             this.Team12.Name = "Team12";
             this.Team12.Size = new System.Drawing.Size(100, 96);
             this.Team12.TabIndex = 17;
@@ -225,7 +228,7 @@
             // 
             // Team13
             // 
-            this.Team13.Location = new System.Drawing.Point(547, 315);
+            this.Team13.Location = new System.Drawing.Point(547, 325);
             this.Team13.Name = "Team13";
             this.Team13.Size = new System.Drawing.Size(100, 96);
             this.Team13.TabIndex = 18;
@@ -234,36 +237,12 @@
             // 
             // Team14
             // 
-            this.Team14.Location = new System.Drawing.Point(654, 315);
+            this.Team14.Location = new System.Drawing.Point(654, 325);
             this.Team14.Name = "Team14";
             this.Team14.Size = new System.Drawing.Size(100, 96);
             this.Team14.TabIndex = 19;
             this.Team14.Text = "";
             this.Team14.Visible = false;
-            // 
-            // Team1Sum
-            // 
-            this.Team1Sum.AutoSize = true;
-            this.Team1Sum.Location = new System.Drawing.Point(63, 213);
-            this.Team1Sum.Name = "Team1Sum";
-            this.Team1Sum.Size = new System.Drawing.Size(0, 13);
-            this.Team1Sum.TabIndex = 20;
-            // 
-            // Team2Sum
-            // 
-            this.Team2Sum.AutoSize = true;
-            this.Team2Sum.Location = new System.Drawing.Point(162, 213);
-            this.Team2Sum.Name = "Team2Sum";
-            this.Team2Sum.Size = new System.Drawing.Size(0, 13);
-            this.Team2Sum.TabIndex = 21;
-            // 
-            // Team3Sum
-            // 
-            this.Team3Sum.AutoSize = true;
-            this.Team3Sum.Location = new System.Drawing.Point(270, 213);
-            this.Team3Sum.Name = "Team3Sum";
-            this.Team3Sum.Size = new System.Drawing.Size(0, 13);
-            this.Team3Sum.TabIndex = 22;
             // 
             // Team4Sum
             // 
@@ -273,42 +252,24 @@
             this.Team4Sum.Size = new System.Drawing.Size(0, 13);
             this.Team4Sum.TabIndex = 23;
             // 
-            // Team5Sum
+            // pictureBox1
             // 
-            this.Team5Sum.AutoSize = true;
-            this.Team5Sum.Location = new System.Drawing.Point(488, 213);
-            this.Team5Sum.Name = "Team5Sum";
-            this.Team5Sum.Size = new System.Drawing.Size(0, 13);
-            this.Team5Sum.TabIndex = 24;
-            // 
-            // Team6Sum
-            // 
-            this.Team6Sum.AutoSize = true;
-            this.Team6Sum.Location = new System.Drawing.Point(591, 213);
-            this.Team6Sum.Name = "Team6Sum";
-            this.Team6Sum.Size = new System.Drawing.Size(0, 13);
-            this.Team6Sum.TabIndex = 25;
-            // 
-            // Team7Sum
-            // 
-            this.Team7Sum.AutoSize = true;
-            this.Team7Sum.Location = new System.Drawing.Point(700, 213);
-            this.Team7Sum.Name = "Team7Sum";
-            this.Team7Sum.Size = new System.Drawing.Size(0, 13);
-            this.Team7Sum.TabIndex = 26;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(609, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 105);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // TeamGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(212)))), ((int)(((byte)(0)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(766, 485);
-            this.Controls.Add(this.Team7Sum);
-            this.Controls.Add(this.Team6Sum);
-            this.Controls.Add(this.Team5Sum);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Team4Sum);
-            this.Controls.Add(this.Team3Sum);
-            this.Controls.Add(this.Team2Sum);
-            this.Controls.Add(this.Team1Sum);
             this.Controls.Add(this.Team14);
             this.Controls.Add(this.Team13);
             this.Controls.Add(this.Team12);
@@ -329,8 +290,11 @@
             this.Controls.Add(this.Team1);
             this.Controls.Add(this.FourManScramble);
             this.Controls.Add(this.TwoManScramble);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TeamGenerator";
-            this.Text = "Form1";
+            this.Text = "Beechwood Classic ";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,13 +322,8 @@
         private System.Windows.Forms.RichTextBox Team12;
         private System.Windows.Forms.RichTextBox Team13;
         private System.Windows.Forms.RichTextBox Team14;
-        private System.Windows.Forms.Label Team1Sum;
-        private System.Windows.Forms.Label Team2Sum;
-        private System.Windows.Forms.Label Team3Sum;
         private System.Windows.Forms.Label Team4Sum;
-        private System.Windows.Forms.Label Team5Sum;
-        private System.Windows.Forms.Label Team6Sum;
-        private System.Windows.Forms.Label Team7Sum;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
