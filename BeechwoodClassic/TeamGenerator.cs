@@ -116,6 +116,7 @@ namespace BeechwoodClassic
                 vsLabel.Visible = false;
                 usaLabel.Visible = false;
                 europeLabel.Visible = false;
+        
                 Team8.Visible = false;
                 Team9.Visible = false;
                 Team10.Visible = false;
@@ -123,6 +124,8 @@ namespace BeechwoodClassic
                 Team12.Visible = false;
                 Team13.Visible = false;
                 Team14.Visible = false;
+                SendItPictureBox.Visible = true;
+                DalyBox.Visible = true;
 
 
 
@@ -141,6 +144,8 @@ namespace BeechwoodClassic
                 Team12.Visible = true;
                 Team13.Visible = true;
                 Team14.Visible = true;
+                SendItPictureBox.Visible = false;
+                DalyBox.Visible = false;
                     
             }
 

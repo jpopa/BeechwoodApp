@@ -51,7 +51,13 @@
             this.Team14 = new System.Windows.Forms.RichTextBox();
             this.Team4Sum = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.SendItPictureBox = new System.Windows.Forms.PictureBox();
+            this.DalyBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SendItPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DalyBox)).BeginInit();
             this.SuspendLayout();
             // 
             // TwoManScramble
@@ -137,7 +143,7 @@
             // 
             // GenerateButton
             // 
-            this.GenerateButton.Location = new System.Drawing.Point(348, 442);
+            this.GenerateButton.Location = new System.Drawing.Point(348, 443);
             this.GenerateButton.Name = "GenerateButton";
             this.GenerateButton.Size = new System.Drawing.Size(75, 23);
             this.GenerateButton.TabIndex = 9;
@@ -149,7 +155,7 @@
             // 
             this.vsLabel.AutoSize = true;
             this.vsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vsLabel.Location = new System.Drawing.Point(370, 244);
+            this.vsLabel.Location = new System.Drawing.Point(370, 246);
             this.vsLabel.Name = "vsLabel";
             this.vsLabel.Size = new System.Drawing.Size(33, 20);
             this.vsLabel.TabIndex = 10;
@@ -174,7 +180,7 @@
             this.europeLabel.AutoSize = true;
             this.europeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.europeLabel.ForeColor = System.Drawing.Color.Blue;
-            this.europeLabel.Location = new System.Drawing.Point(352, 295);
+            this.europeLabel.Location = new System.Drawing.Point(352, 291);
             this.europeLabel.Name = "europeLabel";
             this.europeLabel.Size = new System.Drawing.Size(67, 20);
             this.europeLabel.TabIndex = 12;
@@ -183,7 +189,7 @@
             // 
             // Team8
             // 
-            this.Team8.Location = new System.Drawing.Point(13, 325);
+            this.Team8.Location = new System.Drawing.Point(13, 320);
             this.Team8.Name = "Team8";
             this.Team8.Size = new System.Drawing.Size(100, 96);
             this.Team8.TabIndex = 13;
@@ -192,7 +198,7 @@
             // 
             // Team9
             // 
-            this.Team9.Location = new System.Drawing.Point(120, 325);
+            this.Team9.Location = new System.Drawing.Point(120, 320);
             this.Team9.Name = "Team9";
             this.Team9.Size = new System.Drawing.Size(100, 96);
             this.Team9.TabIndex = 14;
@@ -201,7 +207,7 @@
             // 
             // Team10
             // 
-            this.Team10.Location = new System.Drawing.Point(226, 325);
+            this.Team10.Location = new System.Drawing.Point(226, 320);
             this.Team10.Name = "Team10";
             this.Team10.Size = new System.Drawing.Size(100, 96);
             this.Team10.TabIndex = 15;
@@ -210,7 +216,7 @@
             // 
             // Team11
             // 
-            this.Team11.Location = new System.Drawing.Point(333, 325);
+            this.Team11.Location = new System.Drawing.Point(333, 320);
             this.Team11.Name = "Team11";
             this.Team11.Size = new System.Drawing.Size(100, 96);
             this.Team11.TabIndex = 16;
@@ -219,7 +225,7 @@
             // 
             // Team12
             // 
-            this.Team12.Location = new System.Drawing.Point(440, 325);
+            this.Team12.Location = new System.Drawing.Point(440, 320);
             this.Team12.Name = "Team12";
             this.Team12.Size = new System.Drawing.Size(100, 96);
             this.Team12.TabIndex = 17;
@@ -228,7 +234,7 @@
             // 
             // Team13
             // 
-            this.Team13.Location = new System.Drawing.Point(547, 325);
+            this.Team13.Location = new System.Drawing.Point(547, 320);
             this.Team13.Name = "Team13";
             this.Team13.Size = new System.Drawing.Size(100, 96);
             this.Team13.TabIndex = 18;
@@ -237,7 +243,7 @@
             // 
             // Team14
             // 
-            this.Team14.Location = new System.Drawing.Point(654, 325);
+            this.Team14.Location = new System.Drawing.Point(654, 320);
             this.Team14.Name = "Team14";
             this.Team14.Size = new System.Drawing.Size(100, 96);
             this.Team14.TabIndex = 19;
@@ -261,13 +267,46 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(44, 35);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 47);
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
+            // 
+            // SendItPictureBox
+            // 
+            this.SendItPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SendItPictureBox.Image")));
+            this.SendItPictureBox.Location = new System.Drawing.Point(547, 237);
+            this.SendItPictureBox.Name = "SendItPictureBox";
+            this.SendItPictureBox.Size = new System.Drawing.Size(149, 245);
+            this.SendItPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SendItPictureBox.TabIndex = 29;
+            this.SendItPictureBox.TabStop = false;
+            this.SendItPictureBox.Visible = false;
+            // 
+            // DalyBox
+            // 
+            this.DalyBox.Image = ((System.Drawing.Image)(resources.GetObject("DalyBox.Image")));
+            this.DalyBox.Location = new System.Drawing.Point(13, 245);
+            this.DalyBox.Name = "DalyBox";
+            this.DalyBox.Size = new System.Drawing.Size(316, 221);
+            this.DalyBox.TabIndex = 30;
+            this.DalyBox.TabStop = false;
+            this.DalyBox.Visible = false;
+            // 
             // TeamGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(212)))), ((int)(((byte)(0)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(766, 485);
+            this.ClientSize = new System.Drawing.Size(785, 497);
+            this.Controls.Add(this.DalyBox);
+            this.Controls.Add(this.SendItPictureBox);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Team4Sum);
             this.Controls.Add(this.Team14);
@@ -295,6 +334,9 @@
             this.Name = "TeamGenerator";
             this.Text = "Beechwood Classic ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SendItPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DalyBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,6 +366,9 @@
         private System.Windows.Forms.RichTextBox Team14;
         private System.Windows.Forms.Label Team4Sum;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox SendItPictureBox;
+        private System.Windows.Forms.PictureBox DalyBox;
     }
 }
 
