@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BeechwoodClassic.exe" size="396288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BeechwoodClassic.exe" size="7759872">
       <assemblyIdentity name="BeechwoodClassic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6V1w50sZgtkbpG8AlgRnfdjvheajga1r83ra16vas9o=</dsig:DigestValue>
+        <dsig:DigestValue>pY6tTIZPPT72rb8gHe8Hcdi4r5ULmS1SDvZQnCKAAkc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

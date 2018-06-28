@@ -19,3 +19,4 @@ C:\GitKraken\PersonalGitHub\Beechwood\BeechwoodApp\BeechwoodClassic\bin\Debug\Be
 C:\GitKraken\PersonalGitHub\Beechwood\BeechwoodApp\BeechwoodClassic\bin\Debug\BeechwoodClassic.pdb
 C:\GitKraken\PersonalGitHub\Beechwood\BeechwoodApp\BeechwoodClassic\obj\Debug\BeechwoodClassic.exe.manifest
 C:\GitKraken\PersonalGitHub\Beechwood\BeechwoodApp\BeechwoodClassic\obj\Debug\BeechwoodClassic.application
+C:\GitKraken\PersonalGitHub\Beechwood\BeechwoodApp\BeechwoodClassic\obj\Debug\BeechwoodClassic.csprojResolveAssemblyReference.cache
