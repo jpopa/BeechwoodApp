@@ -40,7 +40,6 @@
             this.Team7 = new System.Windows.Forms.RichTextBox();
             this.GenerateButton = new System.Windows.Forms.Button();
             this.vsLabel = new System.Windows.Forms.Label();
-            this.usaLabel = new System.Windows.Forms.Label();
             this.europeLabel = new System.Windows.Forms.Label();
             this.Team8 = new System.Windows.Forms.RichTextBox();
             this.Team9 = new System.Windows.Forms.RichTextBox();
@@ -54,6 +53,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SendItPictureBox = new System.Windows.Forms.PictureBox();
             this.DalyBox = new System.Windows.Forms.PictureBox();
+            this.usaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SendItPictureBox)).BeginInit();
@@ -162,18 +162,6 @@
             this.vsLabel.Text = "VS";
             this.vsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.vsLabel.Visible = false;
-            // 
-            // usaLabel
-            // 
-            this.usaLabel.AutoSize = true;
-            this.usaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usaLabel.ForeColor = System.Drawing.Color.Red;
-            this.usaLabel.Location = new System.Drawing.Point(362, 92);
-            this.usaLabel.Name = "usaLabel";
-            this.usaLabel.Size = new System.Drawing.Size(46, 20);
-            this.usaLabel.TabIndex = 11;
-            this.usaLabel.Text = "USA";
-            this.usaLabel.Visible = false;
             // 
             // europeLabel
             // 
@@ -290,12 +278,25 @@
             // DalyBox
             // 
             this.DalyBox.Image = ((System.Drawing.Image)(resources.GetObject("DalyBox.Image")));
-            this.DalyBox.Location = new System.Drawing.Point(13, 245);
+            this.DalyBox.Location = new System.Drawing.Point(44, 274);
             this.DalyBox.Name = "DalyBox";
-            this.DalyBox.Size = new System.Drawing.Size(316, 221);
+            this.DalyBox.Size = new System.Drawing.Size(264, 171);
+            this.DalyBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DalyBox.TabIndex = 30;
             this.DalyBox.TabStop = false;
             this.DalyBox.Visible = false;
+            // 
+            // usaLabel
+            // 
+            this.usaLabel.AutoSize = true;
+            this.usaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usaLabel.ForeColor = System.Drawing.Color.Red;
+            this.usaLabel.Location = new System.Drawing.Point(362, 92);
+            this.usaLabel.Name = "usaLabel";
+            this.usaLabel.Size = new System.Drawing.Size(46, 20);
+            this.usaLabel.TabIndex = 11;
+            this.usaLabel.Text = "USA";
+            this.usaLabel.Visible = false;
             // 
             // TeamGenerator
             // 
@@ -355,7 +356,6 @@
         private System.Windows.Forms.RichTextBox Team7;
         private System.Windows.Forms.Button GenerateButton;
         private System.Windows.Forms.Label vsLabel;
-        private System.Windows.Forms.Label usaLabel;
         private System.Windows.Forms.Label europeLabel;
         private System.Windows.Forms.RichTextBox Team8;
         private System.Windows.Forms.RichTextBox Team9;
@@ -369,6 +369,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox SendItPictureBox;
         private System.Windows.Forms.PictureBox DalyBox;
+        private System.Windows.Forms.Label usaLabel;
     }
 }
 
